@@ -1,0 +1,35 @@
+###What it is
+
+So-called jump service (public gateway) to access deep-web resouces from a regular web. Completely self-hosted and FOSS.
+
+###Why it exists
+
+Existing public services [caught](https://www.bleepingcomputer.com/news/security/tor-to-web-proxy-caught-replacing-bitcoin-addresses-on-ransomware-payment-sites) doing nasty stuff for their own profit and are not trustworthy.
+
+###Installation
+
+Clone this repository:
+
+```
+git clone <path-to-repo>
+cd repo
+```
+
+Install dependencies:
+
+```
+cd src
+perl cpanm --installdeps .
+```
+
+Start service:
+
+```
+plackup
+```
+
+###To-Do
+
+Make front page more eye-candy.
+
+Prepare docker file to simplify deployment procedure.
