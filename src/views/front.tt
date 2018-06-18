@@ -1,0 +1,12 @@
+<div id="page">
+ <form name="test" method="post" action="/jump">
+    <p>Enter address
+    <p><input type="text" name="addr" size="40">
+    <p>
+    <input type="radio" name="type" value="onion" checked="checked">Onion
+    <input type="radio" name="type" value="i2p">i2p
+    <p>Onion router: <% onion_router %>
+    <p>i2p router: <% i2p_router %>
+    <p><input type="submit" value="Jump">
+ </form>
+</div>
