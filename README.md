@@ -30,6 +30,15 @@ plackup bin/app.psgi
 
 Access service on the port 5000; Note: this project does not provide implementations of tor or i2p networks itself. You need to install desirable onion and i2p routers using preferable method for your operating system and have it up and running for a gateway to work.
 
+### Or via Docker
+
+```
+# docker build -t jump .
+# docker run -it -p 5000:5000 jump
+```
+
+Everything required for this to work (+both tor and i2p routers) will be installed inside the container automatically.
+
 ### Screenshots
 
 ![](/src/screenshots/Screenshot_20180618_131116.png)
@@ -40,6 +49,6 @@ Access service on the port 5000; Note: this project does not provide implementat
 
 Make front page more eye-candy.
 
-Prepare docker file to simplify deployment procedure.
+~~Prepare docker file to simplify deployment procedure.~~
 
 Move important currently hardcoded stuff to a config file.
