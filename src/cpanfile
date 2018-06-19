@@ -1,15 +1,5 @@
 requires "Dancer2" => "0.206000";
 requires "LWP::Protocol::socks" => "0";
 requires "LWP::UserAgent" => "0";
-requires "Net::Ping" => "0";
-requires "HTTP::Proxy" => "0";
 
-recommends "YAML"             => "0";
 recommends "URL::Encode::XS"  => "0";
-recommends "CGI::Deurl::XS"   => "0";
-recommends "HTTP::Parser::XS" => "0";
-
-on "test" => sub {
-    requires "Test::More"            => "0";
-    requires "HTTP::Request::Common" => "0";
-};
